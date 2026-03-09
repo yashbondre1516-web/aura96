@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In | AURA.ai</title>
+    <link href="https://fonts.googleapis.com" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com">
+    <style>
+        :root {
+            --primary: #00bcd4;
+            --dark: #1a1a1a;
+            --light: #f4f7f6;
+            --white: #ffffff;
+            --border: #e1e1e1;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background-color: var(--light); 
+            height: 100vh; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+        }
+
+        .login-card {
+            background: var(--white);
+            padding: 40px;
+            width: 100%;
+            max-width: 400px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        .login-card .logo {
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--dark);
+            text-decoration: none;
+            display: block;
+            margin-bottom: 30px;
+        }
+
+        .login-card h2 {
+            margin-bottom: 10px;
+            color: var(--dark);
+            font-size: 24px;
+        }
+
+        .login-card p {
+            color: #777;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+
+        .form-group {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        .form-group input:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(0, 188, 212, 0.1);
+        }
+
+        .options {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+            font-size: 13px;
+        }
+
+        .options a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .signin-btn {
+            width: 100%;
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 14px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .signin-btn:hover {
+            background: #0097a7;
+            transform: translateY(-1px);
+        }
+
+        .social-login {
+            margin-top: 25px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+
+        .social-btn {
+            width: 100%;
+            background: #fff;
+            border: 1px solid var(--border);
+            padding: 10px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            cursor: pointer;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-card">
+        <a href="yash4.html" class="logo">AURA.ai</a>
+        <h2>Welcome Back</h2>
+        <p>Enter your details to access your account</p>
+
+        <form action="#">
+            <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" placeholder="name@company.com" required>
+            </div>
+            
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" placeholder="••••••••" required>
+            </div>
+
+            <div class="options">
+                <label><input type="checkbox"> Remember me</label>
+                <a href="#">Forgot password?</a>
+            </div>
+
+            <button type="submit" class="signin-btn"><a href="yash4.html">Sign In</a></button>
+        </form>
+
+        <div class="social-login">
+            <button class="social-btn">
+                <img src="https://www.google.com" width="16" alt="Google">
+                Sign in with Google
+            </button>
+        </div>
+        
+        <p style="margin-top: 20px; font-size: 14px;">
+            Don't have an account? <a href="#" style="color: var(--primary); text-decoration: none; font-weight: 600;">Sign up</a>
+        </p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | AURA.ai</title>
+    <link href="https://fonts.googleapis.com" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com">
+    <style>
+        :root {
+            --primary: #00bcd4;
+            --dark: #1a1a1a;
+            --light: #f9f9f9;
+            --white: #ffffff;
+            --text: #444;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Inter', sans-serif; color: var(--text); line-height: 1.6; }
+
+        /* Shared Navigation */
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 8%; background: var(--white); box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 1000; }
+        .logo { font-size: 24px; font-weight: 800; color: var(--dark); text-decoration: none; }
+        .nav-links { list-style: none; display: flex; gap: 30px; }
+        .nav-links a { text-decoration: none; color: var(--text); font-weight: 600; }
+        .cta-btn { background: var(--primary); color: var(--white) !important; padding: 10px 24px; border-radius: 8px; text-decoration: none; }
+
+        /* Page Header */
+        .page-header { background: var(--light); padding: 80px 8%; text-align: center; }
+        .page-header h1 { font-size: 42px; color: var(--dark); margin-bottom: 15px; }
+
+        /* Service Rows */
+        .service-row { display: flex; align-items: center; gap: 60px; padding: 80px 8%; }
+        .service-row:nth-child(even) { flex-direction: row-reverse; background: #fff; }
+        .service-row:nth-child(odd) { background: #fafafa; }
+        
+        .service-content { flex: 1; }
+        .service-content h2 { font-size: 32px; color: var(--dark); margin-bottom: 20px; }
+        .service-content p { font-size: 17px; margin-bottom: 20px; }
+        .service-image { flex: 1; }
+        .service-image img { width: 100%; border-radius: 20px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); }
+
+        /* Icon List */
+        .service-list { list-style: none; }
+        .service-list li { margin-bottom: 10px; display: flex; align-items: center; gap: 10px; font-weight: 600; }
+        .service-list i { color: var(--primary); }
+
+        footer { text-align: center; padding: 40px; background: var(--dark); color: white; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">AURA.ai</a>
+        <ul class="nav-links">
+            <li><a href="yash4.html">Home</a></li>
+            <li><a href="service.html" style="color: var(--primary);">Services</a></li>
+            <li><a href="skill.html">Skills</a></li>
+            <li><a href="signin.html" class="cta-btn">Get Started</a></li>
+        </ul>
+    </nav>
+
+    <header class="page-header">
+        <h1>Solutions We Provide</h1>
+        <p>Turning complex problems into simple, elegant digital solutions.</p>
+    </header>
+
+    <section class="service-row">
+        <div class="service-content">
+            <h2>UI/UX Design</h2>
+            <p>We create intuitive interfaces that prioritize user experience without sacrificing brand aesthetics. Our designs are built to convert visitors into loyal customers.</p>
+            <ul class="service-list">
+                <li><i class="fas fa-check-circle"></i> Wireframing & Prototyping</li>
+                <li><i class="fas fa-check-circle"></i> User Testing</li>
+                <li><i class="fas fa-check-circle"></i> Visual Identity Design</li>
+            </ul>
+        </div>
+        <div class="service-image">
+            <img src="https://images.unsplash.com" alt="Design">
+        </div>
+    </section>
+
+    <section class="service-row">
+        <div class="service-content">
+            <h2>Web Development</h2>
+            <p>High-performance websites built with the latest technologies. We focus on speed, security, and SEO-friendly architecture to give your business an edge.</p>
+            <ul class="service-list">
+                <li><i class="fas fa-check-circle"></i> Custom React Apps</li>
+                <li><i class="fas fa-check-circle"></i> E-commerce Solutions</li>
+                <li><i class="fas fa-check-circle"></i> API Integrations</li>
+            </ul>
+        </div>
+        <div class="service-image">
+            <img src="https://images.unsplash.com" alt="Development">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Verve Digital. Built for excellence.</p>
+    </footer>
+
+</body>
+</html>

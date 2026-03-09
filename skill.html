@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills & Expertise | AURA.ai</title>
+    <link href="https://fonts.googleapis.com" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com">
+    <style>
+        :root {
+            --primary: #00bcd4;
+            --dark: #1a1a1a;
+            --light: #f4f7f6;
+            --white: #ffffff;
+            --text: #555;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Inter', sans-serif; color: var(--text); background: var(--white); line-height: 1.6; }
+
+        /* Shared Navigation */
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 8%; background: var(--white); box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 1000; }
+        .logo { font-size: 24px; font-weight: 800; color: var(--dark); text-decoration: none; }
+        .nav-links { list-style: none; display: flex; gap: 30px; }
+        .nav-links a { text-decoration: none; color: var(--text); font-weight: 600; transition: 0.3s; }
+        .nav-links a:hover { color: var(--primary); }
+        .cta-btn { background: var(--primary); color: var(--white) !important; padding: 10px 24px; border-radius: 8px; text-decoration: none; }
+
+        /* Skills Header */
+        .skills-header { text-align: center; padding: 100px 8% 60px; background: var(--light); }
+        .skills-header h1 { font-size: 48px; color: var(--dark); margin-bottom: 15px; }
+
+        /* Skill Content */
+        .skills-container { display: flex; flex-wrap: wrap; gap: 50px; padding: 80px 8%; align-items: flex-start; }
+        .skills-text { flex: 1; min-width: 300px; }
+        .skills-text h2 { color: var(--dark); margin-bottom: 20px; font-size: 32px; }
+        
+        .skills-visual { flex: 1; min-width: 300px; }
+
+        /* Progress Bars */
+        .skill-item { margin-bottom: 25px; }
+        .skill-info { display: flex; justify-content: space-between; margin-bottom: 8px; font-weight: 600; color: var(--dark); }
+        .progress-line { height: 10px; width: 100%; background: #e0e0e0; border-radius: 10px; position: relative; }
+        .progress-line span { height: 100%; background: var(--primary); border-radius: 10px; position: absolute; left: 0; top: 0; }
+
+        /* Tech Stack Grid */
+        .tech-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 20px; padding: 40px 8%; text-align: center; background: #fff; }
+        .tech-card { padding: 30px; border: 1px solid #eee; border-radius: 12px; transition: 0.3s; }
+        .tech-card:hover { border-color: var(--primary); transform: scale(1.05); }
+        .tech-card i { font-size: 40px; margin-bottom: 15px; color: var(--dark); }
+
+        footer { text-align: center; padding: 40px; background: var(--dark); color: white; margin-top: 50px; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">AURA.ai</a>
+        <ul class="nav-links">
+            <li><a href="yash4.html">Home</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="skills.html" style="color: var(--primary);">Skills</a></li>
+            <li><a href="signin.html" class="cta-btn">Sign In</a></li>
+        </ul>
+    </nav>
+
+    <div class="skills-header">
+        <h1>Our Expertise</h1>
+        <p>Mastering the tools of tomorrow to build your vision today.</p>
+    </div>
+
+    <section class="skills-container">
+        <div class="skills-text">
+            <h2>Core Competencies</h2>
+            <p>We don't just build websites; we engineer digital experiences. Our team stays at the forefront of technology to ensure your project is scalable, secure, and blazing fast.</p>
+            <p style="margin-top: 20px;">From front-end aesthetics to complex back-end architecture, we cover the full spectrum of digital development.</p>
+        </div>
+
+        <div class="skills-visual">
+            <div class="skill-item">
+                <div class="skill-info"><span>Web Development</span><span>95%</span></div>
+                <div class="progress-line"><span style="width: 95%;"></span></div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-info"><span>UI/UX Design</span><span>88%</span></div>
+                <div class="progress-line"><span style="width: 88%;"></span></div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-info"><span>Mobile Optimization</span><span>90%</span></div>
+                <div class="progress-line"><span style="width: 90%;"></span></div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-info"><span>SEO & Analytics</span><span>82%</span></div>
+                <div class="progress-line"><span style="width: 82%;"></span></div>
+            </div>
+        </div>
+    </section>
+
+    <h2 style="text-align: center; margin-top: 40px; color: #1a1a1a;">Our Tech Stack</h2>
+    <section class="tech-grid">
+        <div class="tech-card"><i class="fab fa-html5"></i><h3>HTML5</h3></div>
+        <div class="tech-card"><i class="fab fa-css3-alt"></i><h3>CSS3</h3></div>
+        <div class="tech-card"><i class="fab fa-js"></i><h3>JavaScript</h3></div>
+        <div class="tech-card"><i class="fab fa-react"></i><h3>React</h3></div>
+        <div class="tech-card"><i class="fab fa-node-js"></i><h3>Node.js</h3></div>
+        <div class="tech-card"><i class="fab fa-figma"></i><h3>Figma</h3></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Verve Digital Agency. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

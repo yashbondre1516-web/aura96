@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features | AURA.ai</title>
+    <link href="https://fonts.googleapis.com" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com">
+    <style>
+        :root {
+            --primary: #00bcd4;
+            --dark: #1a1a1a;
+            --light: #f9f9f9;
+            --white: #ffffff;
+            --text: #444;
+            --border: #e1e1e1;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Inter', sans-serif; color: var(--text); line-height: 1.6; }
+
+        /* Shared Navigation */
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 8%; background: var(--white); box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 1000; }
+        .logo { font-size: 24px; font-weight: 800; color: var(--dark); text-decoration: none; }
+        .nav-links { list-style: none; display: flex; gap: 30px; }
+        .nav-links a { text-decoration: none; color: var(--text); font-weight: 600; }
+        .cta-btn { background: var(--primary); color: var(--white) !important; padding: 10px 24px; border-radius: 8px; text-decoration: none; }
+
+        /* Header Area */
+        .features-hero { text-align: center; padding: 80px 8%; background: linear-gradient(to bottom, #f0fdff, #ffffff); }
+        .features-hero h1 { font-size: 48px; color: var(--dark); margin-bottom: 15px; }
+
+        /* Feature Detailed Grid */
+        .detailed-features { padding: 60px 8%; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
+        .feature-box { border: 1px solid var(--border); padding: 30px; border-radius: 12px; transition: 0.3s; }
+        .feature-box:hover { border-color: var(--primary); transform: translateY(-5px); }
+        .feature-box i { font-size: 30px; color: var(--primary); margin-bottom: 15px; }
+        .feature-box h3 { margin-bottom: 10px; color: var(--dark); }
+
+        /* Comparison Table */
+        .comparison-section { padding: 80px 8%; background: var(--light); text-align: center; }
+        .comparison-table { width: 100%; max-width: 900px; margin: 40px auto; border-collapse: collapse; background: var(--white); border-radius: 10px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.05); }
+        th, td { padding: 20px; border-bottom: 1px solid var(--border); text-align: center; }
+        th { background: var(--dark); color: var(--white); }
+        .check { color: #2ecc71; font-weight: bold; }
+        .cross { color: #e74c3c; }
+
+        footer { text-align: center; padding: 40px; background: var(--dark); color: white; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">AURA.ai</a>
+        <ul class="nav-links">
+            <li><a href="yash4.html">Home</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="features.html" style="color: var(--primary);">Features</a></li>
+            <li><a href="signin.html" class="cta-btn">Sign In</a></li>
+        </ul>
+    </nav>
+
+    <header class="features-hero">
+        <h1>Why AURA Outperforms.</h1>
+        <p>Advanced engineering meets intuitive design. Explore our core capabilities.</p>
+    </header>
+
+    <section class="detailed-features">
+        <div class="feature-box">
+            <i class="fas fa-chart-line"></i>
+            <h3>Real-time Analytics</h3>
+            <p>Track your growth in real-time with our integrated dashboard and automated reporting system.</p>
+        </div>
+        <div class="feature-box">
+            <i class="fas fa-cloud"></i>
+            <h3>Cloud Sync</h3>
+            <p>Access your work from any device, anywhere in the world. Fully encrypted and always available.</p>
+        </div>
+        <div class="feature-box">
+            <i class="fas fa-users"></i>
+            <h3>Team Collaboration</h3>
+            <p>Invite team members, assign tasks, and chat within projects to speed up your workflow.</p>
+        </div>
+        <div class="feature-box">
+            <i class="fas fa-mobile-alt"></i>
+            <h3>Fully Responsive</h3>
+            <p>Our platform adapts beautifully to mobile, tablet, and desktop screens automatically.</p>
+        </div>
+    </section>
+
+    <section class="comparison-section">
+        <h2>How we compare</h2>
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th>AURA.ai</th>
+                    <th>Competitors</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Setup Speed</td>
+                    <td><span class="check">Instant</span></td>
+                    <td>2-3 Days</td>
+                </tr>
+                <tr>
+                    <td>Mobile App</td>
+                    <td><span class="check"><i class="fas fa-check"></i></span></td>
+                    <td><span class="cross"><i class="fas fa-times"></i></span></td>
+                </tr>
+                <tr>
+                    <td>24/7 Support</td>
+                    <td><span class="check"><i class="fas fa-check"></i></span></td>
+                    <td>Business Hours Only</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 AURA Digital Agency. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

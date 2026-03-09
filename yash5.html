@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | Verve.ai</title>
+    <link href="https://fonts.googleapis.com" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com">
+    <style>
+        :root {
+            --primary: #00bcd4;
+            --dark: #1a1a1a;
+            --light: #f9f9f9;
+            --white: #ffffff;
+            --text: #444;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Inter', sans-serif; color: var(--text); background: var(--white); line-height: 1.6; }
+
+        /* Shared Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky; top: 0; z-index: 1000;
+        }
+        .logo { font-size: 24px; font-weight: 800; color: var(--dark); text-decoration: none; }
+        .nav-links { list-style: none; display: flex; gap: 30px; }
+        .nav-links a { text-decoration: none; color: var(--text); font-weight: 600; }
+        .cta-btn { background: var(--primary); color: var(--white) !important; padding: 10px 24px; border-radius: 8px; text-decoration: none; }
+
+        /* Page Header */
+        .page-title {
+            background: var(--light);
+            padding: 60px 8%;
+            text-align: center;
+        }
+        .page-title h1 { font-size: 42px; color: var(--dark); margin-bottom: 10px; }
+
+        /* Services Grid */
+        .services-container { padding: 80px 8%; }
+        .service-row {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            margin-bottom: 80px;
+        }
+        .service-row:nth-child(even) { flex-direction: row-reverse; }
+        .service-text { flex: 1; }
+        .service-text h2 { font-size: 32px; color: var(--dark); margin-bottom: 20px; }
+        .service-image { flex: 1; }
+        .service-image img { width: 100%; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+
+        /* Contact Section */
+        .contact-cta {
+            background: var(--dark);
+            color: var(--white);
+            padding: 80px 8%;
+            text-align: center;
+        }
+        .contact-cta h2 { margin-bottom: 20px; font-size: 36px; }
+
+        @media (max-width: 768px) {
+            .service-row { flex-direction: column !important; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">AURA.ai</a>
+        <ul class="nav-links">
+            <li><a href="yash4.html">Home</a></li>
+            <li><a href="services.html" style="color: var(--primary);">Services</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="signin.html" class="cta-btn">Sign In</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-title">
+        <h1>Our Specialized Services</h1>
+        <p>Expert solutions tailored to solve your business pain points.</p>
+    </div>
+
+    <section class="services-container">
+        <!-- Service 1 -->
+        <div class="service-row">
+            <div class="service-text">
+                <h2>Digital Strategy</h2>
+                <p>We help you navigate the complex digital landscape with data-driven strategies that prioritize growth and brand authority.</p>
+                <ul style="margin-top: 15px; list-style-position: inside;">
+                    <li>Market Analysis</li>
+                    <li>Competitor Tracking</li>
+                    <li>ROI Optimization</li>
+                </ul>
+            </div>
+            <div class="service-image">
+                <img src="https://images.unsplash.com" alt="Strategy">
+            </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-row">
+            <div class="service-text">
+                <h2>Custom Development</h2>
+                <p>From sleek landing pages to complex web applications, our development team builds high-performance tools for your brand.</p>
+            </div>
+            <div class="service-image">
+                <img src="https://images.unsplash.com" alt="Development">
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-cta">
+        <h2>Ready to start your project?</h2>
+        <p style="margin-bottom: 30px; opacity: 0.8;">Contact us today for a free consultation with our experts.</p>
+        <a href="yash4.html">go back to main</a>
+
+        <a href="#" class="cta-btn" style="padding: 15px 40px;">Get a Free Quote</a>
+    </section>
+    
+</body>
+</html>
